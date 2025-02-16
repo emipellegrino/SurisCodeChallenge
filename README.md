@@ -1,9 +1,49 @@
-Este proyecto fue creado usando .net core 8, entity framework, react y sql express
-para poder correr este proyecto se necesita tener instaladas dichas tecnologias
-el proyecto viene con una migracion con los servicios ya sedeados, al correr la migracion con el comando update-database se creara todo lo necesario en la base de datos
-asi mismo, se denera poner en el appsettings.json del proyecto de backend el coneccion string a su base de datos
-el proyecto de backend correra en el puerto 5000 para mas facilidad, si quieren que sea otro puerto deberan cambiar la configuracion en el program.cs y en el front end deberan cambiarlo en donde se encuentra la configuracion de axios en el app.js
-el proyecto de front end correra en el puerto 3000
-el proyecto de front se hizo instalando 3 dependencias: axios, bootstrap y concurrently(esta solo para dev)
-bootstrap se uso para que quede mejor el front end, axios para manejar request y responses, y concurrently para pdoer disparar ambos proyectos al mismo tiempo
-para poder disparar ambos proyectos al mismo tiempo, se debe ejectuar en la carpeta del front end el comando npm run start:all
+# Proyecto .NET Core 8 con React y SQL Express
+
+Este proyecto ha sido desarrollado utilizando las siguientes tecnologías:
+
+- **.NET Core 8**
+- **Entity Framework**
+- **React**
+- **SQL Express**
+
+## Requisitos
+
+Para poder ejecutar este proyecto, es necesario tener instaladas las siguientes tecnologías:
+
+- .NET Core 8
+- Node.js (para React)
+- SQL Server Express
+
+## Configuración Inicial
+
+### Base de Datos
+
+1. **Migración de la Base de Datos**: El proyecto incluye una migración con los servicios ya configurados. Para aplicar esta migración, ejecuta el siguiente comando en la terminal desde la carpeta del proyecto de backend:
+
+Update-Database
+
+Esto creará todas las estructuras necesarias en la base de datos.
+
+2. **Configuración del Connection String**: Configuración del Connection String: Asegúrate de configurar el connectionString en el archivo appsettings.json del proyecto backend con los detalles de tu base de datos.
+
+### Backend
+Puerto: El servicio backend por defecto correrá en el puerto 5000. Si necesitas cambiar este puerto, modifica las configuraciones en el archivo Program.cs.
+
+### Frontend
+Puerto: El proyecto frontend está configurado para correr en el puerto 3000.
+Dependencias Instaladas:
+axios: Para manejar peticiones HTTP.
+bootstrap: Para mejorar la apariencia del frontend.
+concurrently: Útil solo para desarrollo, permite ejecutar ambos proyectos simultáneamente.
+Configuración de Axios: Si cambias el puerto del backend, también deberás actualizar la configuración de Axios en app.js del proyecto frontend.
+
+### Ejecución
+Para ejecutar ambos proyectos al mismo tiempo:
+
+Navega a la carpeta del proyecto frontend.
+Ejecuta el siguiente comando:
+
+npm run start:all
+
+Este comando usará concurrently para iniciar tanto el servidor backend como el frontend.
