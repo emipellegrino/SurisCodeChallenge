@@ -1,0 +1,38 @@
+[
+  {
+    "ContainingType": "SurisCodeChallenge.Controllers.ReservasController",
+    "Method": "GetReservas",
+    "RelativePath": "api/Reservas/GetReservas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SurisCodeChallenge.Controllers.ReservasController",
+    "Method": "GetServicios",
+    "RelativePath": "api/Reservas/GetServicios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SurisCodeChallenge.Controllers.ReservasController",
+    "Method": "PostReserva",
+    "RelativePath": "api/Reservas/InsertReserva",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reserva",
+        "Type": "SurisCodeChallenge.Models.Entidades.Reserva",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

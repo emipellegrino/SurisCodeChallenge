@@ -1,0 +1,6 @@
+@SurisCodeChallenge_HostAddress = http://localhost:5237
+
+GET {{SurisCodeChallenge_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
